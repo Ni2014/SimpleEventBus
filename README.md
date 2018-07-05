@@ -50,7 +50,7 @@ class EventBus{
     }
 
     public void register(Object target){
-        // 1 找到target中的方法集合并过滤赋予
+        // 1 找到target中的方法集合并过滤赋值
         List<Method> wantedMethods = new ArrayList<>();
         // 2 put到methodMap中
         methodMap.put(target,wantedMethods);
